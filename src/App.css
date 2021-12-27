@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+.active
+{
+  color: aliceblue;
+  background-color:rgb(100, 177, 253);
+  position: relative;
+  box-shadow: 0px 0px 12px 0px inset rgba(0,0,0,0.6);
+  
+}
+.active::after
+{
+  content: ">";
+  font-weight: bolder;
+  display: inline-block;
+  position:absolute ;
+  right: 5px ;
+}
+.pressed:active
+{
+  box-shadow: 0px 0px 12px 1px inset rgba(0,0,0,0.6);
+  
+}
+
+@keyframes appear 
+{
+  from{
+    opacity: 0;
+  }  
+  
+  to {
+    opacity: 1;
+  }
+}
